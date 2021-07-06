@@ -3,6 +3,7 @@ import { GraphQLModule } from '@nestjs/graphql';
 import { QuestionModule } from './question/question.module';
 import { TypeOrmConfigModule } from './typeorm/typeorm-config.module';
 import { AuthModule } from './auth/auth.module';
+import { AnswerModule } from './answer/answer.module';
 
 @Module({
   imports: [
@@ -12,6 +13,7 @@ import { AuthModule } from './auth/auth.module';
     }),
     QuestionModule,
     AuthModule,
+    AnswerModule,
   ],
 })
 export class AppModule {}
